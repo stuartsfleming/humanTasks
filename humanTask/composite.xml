@@ -30,12 +30,6 @@
   <component name="ManagementTask">
     <implementation.workflow src="ManagementTask.task"/>
   </component>
-  <component name="GroupVoteTask">
-    <implementation.workflow src="GroupVoteTask.task"/>
-  </component>
-  <component name="GroupVote">
-    <implementation.workflow src="GroupVote.task"/>
-  </component>
   <wire>
     <source.uri>Process/HumanTasks.UserTask.reference</source.uri>
     <target.uri>UserTask/TaskService</target.uri>
@@ -47,9 +41,5 @@
   <wire>
     <source.uri>Process.service</source.uri>
     <target.uri>Process/Process.service</target.uri>
-  </wire>
-  <wire>
-    <source.uri>Process/HumanTasks.GroupVote.reference</source.uri>
-    <target.uri>GroupVote/TaskService</target.uri>
   </wire>
 </composite>

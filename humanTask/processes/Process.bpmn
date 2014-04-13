@@ -197,6 +197,7 @@
                         <ns5:StringFeature value="USE_PROCESS_PERMISSION" name="sealType"/>
                         <ns5:StringFeature value="REUSE_PAYLOAD" name="reinitiatorPolicy"/>
                         <ns5:StringFeature value="MANAGEMENT" name="humanTaskType"/>
+                        <ns5:StringFeature value="" name="reinitiateSource"/>
                     </ns5:FeatureSet>
                     <ns5:HumanTask humanTaskReference="HumanTasks.ManagementTask"/>
                     <ns5:LogHandlers/>
@@ -270,11 +271,11 @@
             </dataInputAssociation>
             <resourceRole name="Process Owner" id="lane0"/>
         </userTask>
-        <userTask isForCompensation="false" name="GroupVote" id="ACT9582374322793">
+        <userTask isForCompensation="false" name="GroupVote" id="ACT9582425740772">
             <extensionElements>
                 <ns5:OracleExtensions>
                     <ns5:GraphicsAttributes>
-                        <ns5:Position x="607" y="120"/>
+                        <ns5:Position x="585" y="113"/>
                     </ns5:GraphicsAttributes>
                     <ns5:FeatureSet>
                         <ns5:BooleanFeature value="false" name="isDraft"/>
@@ -287,120 +288,12 @@
                         <ns5:StringFeature value="USE_PROCESS_PERMISSION" name="sealType"/>
                         <ns5:StringFeature value="REUSE_PAYLOAD" name="reinitiatorPolicy"/>
                         <ns5:StringFeature value="GROUP" name="humanTaskType"/>
-                        <ns5:AttributeExpression attributeName="subjectExpressionFeature" language="http://www.w3.org/1999/XPath">'GroupVote'
-                            <extensionElements>
-                                <ns5:OracleExtensions>
-                                    <ns5:Expression mode="text"/>
-                                </ns5:OracleExtensions>
-                            </extensionElements>
-                        </ns5:AttributeExpression>
                     </ns5:FeatureSet>
-                    <ns5:HumanTask humanTaskReference="HumanTasks.GroupVote"/>
+                    <ns5:HumanTask/>
                     <ns5:LogHandlers/>
                 </ns5:OracleExtensions>
             </extensionElements>
-            <ioSpecification>
-                <dataInput name="quoteRequest" id="quoteRequest">
-                    <extensionElements>
-                        <ns5:OracleExtensions>
-                            <ns5:TypeRef namespace="http://www.mycompany.com/ns/salesquote" element="QuoteRequest" isArray="false"/>
-                        </ns5:OracleExtensions>
-                    </extensionElements>
-                </dataInput>
-                <dataInput name="execData" id="execData">
-                    <extensionElements>
-                        <ns5:OracleExtensions>
-                            <ns5:TypeRef namespace="http://xmlns.oracle.com/bpel/workflow/task" element="task" isArray="false"/>
-                        </ns5:OracleExtensions>
-                    </extensionElements>
-                </dataInput>
-                <dataOutput name="outcome" id="outcome">
-                    <extensionElements>
-                        <ns5:OracleExtensions>
-                            <ns5:TypeRef namespace="http://www.w3.org/2001/XMLSchema" type="string" isArray="false"/>
-                        </ns5:OracleExtensions>
-                    </extensionElements>
-                </dataOutput>
-                <dataOutput name="quoteRequest" id="quoteRequest">
-                    <extensionElements>
-                        <ns5:OracleExtensions>
-                            <ns5:TypeRef namespace="http://www.mycompany.com/ns/salesquote" element="QuoteRequest" isArray="false"/>
-                        </ns5:OracleExtensions>
-                    </extensionElements>
-                </dataOutput>
-                <dataOutput name="execData" id="execData">
-                    <extensionElements>
-                        <ns5:OracleExtensions>
-                            <ns5:TypeRef namespace="http://xmlns.oracle.com/bpel/workflow/task" element="task" isArray="false"/>
-                        </ns5:OracleExtensions>
-                    </extensionElements>
-                </dataOutput>
-                <inputSet id="ACT9582374322793_uniqueInputSet">
-                    <dataInputRefs>quoteRequest</dataInputRefs>
-                    <dataInputRefs>execData</dataInputRefs>
-                </inputSet>
-                <outputSet id="ACT9582374322793_uniqueOutputSet">
-                    <dataOutputRefs>outcome</dataOutputRefs>
-                    <dataOutputRefs>quoteRequest</dataOutputRefs>
-                    <dataOutputRefs>execData</dataOutputRefs>
-                </outputSet>
-            </ioSpecification>
-            <dataInputAssociation>
-                <extensionElements>
-                    <ns5:OracleExtensions/>
-                </extensionElements>
-                <sourceRef>QuoteRequestDataObject</sourceRef>
-                <targetRef>quoteRequest</targetRef>
-                <assignment>
-                    <extensionElements>
-                        <ns5:OracleExtensions>
-                            <ns5:DataAssignment operation="copy"/>
-                        </ns5:OracleExtensions>
-                    </extensionElements>
-                    <from xsi:type="tFormalExpression" language="http://www.w3.org/1999/XPath" ns7:bpmn="http://www.omg.org/bpmn20" xmlns:ns7="http://xmlns.oracle.com/bpm/XPathNamespace">bpmn:getDataObject('QuoteRequestDataObject')
-                        <extensionElements>
-                            <ns5:OracleExtensions>
-                                <ns5:Expression mode="simple"/>
-                            </ns5:OracleExtensions>
-                        </extensionElements>
-                    </from>
-                    <to xsi:type="tFormalExpression" language="http://www.w3.org/1999/XPath" ns7:bpmn="http://www.omg.org/bpmn20" xmlns:ns7="http://xmlns.oracle.com/bpm/XPathNamespace">bpmn:getDataInput('quoteRequest')
-                        <extensionElements>
-                            <ns5:OracleExtensions>
-                                <ns5:Expression mode="simple"/>
-                            </ns5:OracleExtensions>
-                        </extensionElements>
-                    </to>
-                </assignment>
-            </dataInputAssociation>
-            <dataOutputAssociation>
-                <extensionElements>
-                    <ns5:OracleExtensions/>
-                </extensionElements>
-                <sourceRef>quoteRequest</sourceRef>
-                <targetRef>QuoteRequestDataObject</targetRef>
-                <assignment>
-                    <extensionElements>
-                        <ns5:OracleExtensions>
-                            <ns5:DataAssignment operation="copy"/>
-                        </ns5:OracleExtensions>
-                    </extensionElements>
-                    <from xsi:type="tFormalExpression" language="http://www.w3.org/1999/XPath" ns7:bpmn="http://www.omg.org/bpmn20" xmlns:ns7="http://xmlns.oracle.com/bpm/XPathNamespace">bpmn:getDataOutput('quoteRequest')
-                        <extensionElements>
-                            <ns5:OracleExtensions>
-                                <ns5:Expression mode="simple"/>
-                            </ns5:OracleExtensions>
-                        </extensionElements>
-                    </from>
-                    <to xsi:type="tFormalExpression" language="http://www.w3.org/1999/XPath" ns7:bpmn="http://www.omg.org/bpmn20" xmlns:ns7="http://xmlns.oracle.com/bpm/XPathNamespace">bpmn:getDataObject('QuoteRequestDataObject')
-                        <extensionElements>
-                            <ns5:OracleExtensions>
-                                <ns5:Expression mode="simple"/>
-                            </ns5:OracleExtensions>
-                        </extensionElements>
-                    </to>
-                </assignment>
-            </dataOutputAssociation>
+            <ioSpecification/>
             <resourceRole name="Process Owner" id="lane0"/>
         </userTask>
         <startEvent isInterrupting="false" name="Start" id="EVT9582307448088">
@@ -495,7 +388,19 @@
                 </ns5:OracleExtensions>
             </extensionElements>
         </sequenceFlow>
-        <sequenceFlow sourceRef="ACT9582340097642" targetRef="EVT9582307448162" name="sf28" id="sf28">
+        <sequenceFlow sourceRef="ACT9582340097642" targetRef="ACT9582425740772" name="sf28" id="sf28">
+            <extensionElements>
+                <ns5:OracleExtensions>
+                    <ns5:SequenceFlowAttributes/>
+                    <ns5:FeatureSet>
+                        <ns5:BooleanFeature value="false" name="collapseMessage"/>
+                        <ns5:StringFeature value="-2147483648,-2147483648" name="curve"/>
+                        <ns5:StringFeature value="STRAIGHT" name="routing"/>
+                    </ns5:FeatureSet>
+                </ns5:OracleExtensions>
+            </extensionElements>
+        </sequenceFlow>
+        <sequenceFlow sourceRef="ACT9582425740772" targetRef="EVT9582307448162" name="sf38" id="sf38">
             <extensionElements>
                 <ns5:OracleExtensions>
                     <ns5:SequenceFlowAttributes/>
