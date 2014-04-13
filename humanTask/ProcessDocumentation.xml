@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<?oracleBPM version="11.1.1.7.0.0.8" fileRevision="20120217"?>
+<processDocumentation xmlns="http://xmlns.oracle.com/bpm/taskMetadataService/processDocumentation">
+    <component name="Process">
+        <topicDocumentations>
+            <topicDocumentation name="Process">
+                <descriptions>
+                    <description locale="en">Process</description>
+                </descriptions>
+            </topicDocumentation>
+            <topicDocumentation name="ACT9582315647189">
+                <labels>
+                    <label locale="en">UserTask</label>
+                </labels>
+                <descriptions>
+                    <description locale="en"></description>
+                </descriptions>
+            </topicDocumentation>
+            <topicDocumentation name="ACT9582340097642">
+                <labels>
+                    <label locale="en">ManagementTask</label>
+                </labels>
+                <descriptions>
+                    <description locale="en"></description>
+                </descriptions>
+            </topicDocumentation>
+            <topicDocumentation name="EVT9582307448088">
+                <labels>
+                    <label locale="en">Start</label>
+                </labels>
+            </topicDocumentation>
+            <topicDocumentation name="EVT9582307448162">
+                <labels>
+                    <label locale="en">End</label>
+                </labels>
+            </topicDocumentation>
+            <topicDocumentation name="ACT9582374322793">
+                <labels>
+                    <label locale="en">GroupVote</label>
+                </labels>
+                <descriptions>
+                    <description locale="en"></description>
+                </descriptions>
+            </topicDocumentation>
+            <topicDocumentation name="sf24"/>
+            <topicDocumentation name="sf26"/>
+            <topicDocumentation name="sf28"/>
+        </topicDocumentations>
+    </component>
+</processDocumentation>
