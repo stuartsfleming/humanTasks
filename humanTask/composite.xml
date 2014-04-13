@@ -45,11 +45,11 @@
     <target.uri>GroupVote/TaskService</target.uri>
   </wire>
   <wire>
-    <source.uri>Process.service</source.uri>
-    <target.uri>Process/Process.service</target.uri>
-  </wire>
-  <wire>
     <source.uri>Process/HumanTasks.ManagementTask.reference</source.uri>
     <target.uri>ManagementTask/TaskService</target.uri>
+  </wire>
+  <wire>
+    <source.uri>Process.service</source.uri>
+    <target.uri>Process/Process.service</target.uri>
   </wire>
 </composite>
