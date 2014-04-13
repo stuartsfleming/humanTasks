@@ -10,7 +10,7 @@
             </topicDocumentation>
             <topicDocumentation name="ACT9582315647189">
                 <labels>
-                    <label locale="en">UserTask</label>
+                    <label locale="en">UserTask</label> 
                 </labels>
                 <descriptions>
                     <description locale="en"></description>
@@ -34,7 +34,7 @@
                     <label locale="en">End</label>
                 </labels>
             </topicDocumentation>
-            <topicDocumentation name="ACT9582374322793">
+            <topicDocumentation name="ACT9582425740772">
                 <labels>
                     <label locale="en">GroupVote</label>
                 </labels>
@@ -45,6 +45,7 @@
             <topicDocumentation name="sf24"/>
             <topicDocumentation name="sf26"/>
             <topicDocumentation name="sf28"/>
+            <topicDocumentation name="sf38"/>
         </topicDocumentations>
     </component>
 </processDocumentation>
