@@ -44,9 +44,6 @@
   <component name="Complex">
     <implementation.workflow src="Complex.task"/>
   </component>
-  <component name="UserNoOutput">
-    <implementation.workflow src="UserNoOutput.task"/>
-  </component>
   <wire>
     <source.uri>Process/HumanTasks.UserTask.reference</source.uri>
     <target.uri>UserTask/TaskService</target.uri>
