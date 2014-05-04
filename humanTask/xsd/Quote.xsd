@@ -12,26 +12,4 @@
             <element name="Val2" type="string"/>
         </sequence>
     </complexType>
-    <element name="RulesInput">
-        <complexType>
-            <sequence>
-                <element ref="qt:QuoteRequest"/>
-            </sequence>
-        </complexType>
-    </element>
-    <element name="RulesOutput">
-        <complexType>
-            <sequence>
-                <element ref="qt:ApprovalFlow"/>
-            </sequence>
-        </complexType>
-    </element>
-    <element name="ApproveTaskInfo">
-        <complexType>
-            <sequence>
-                <element name="GUID" type="xsd:string"/>
-                <element name="Namespace" type="xsd:string"/>
-            </sequence>
-        </complexType>
-    </element>
 </schema>
