@@ -33,14 +33,14 @@
             </ns5:OracleExtensions>
         </extensionElements>
         <laneSet>
-            <lane name="Process Owner" id="lane0">
+            <lane name="Initiator" id="lane0">
                 <extensionElements>
                     <ns5:OracleExtensions>
                         <ns5:GraphicsAttributes backgroundColor="-1761607681">
                             <ns5:Position x="0" y="0"/>
-                            <ns5:Size width="305" height="0"/>
+                            <ns5:Size width="200" height="0"/>
                         </ns5:GraphicsAttributes>
-                        <ns5:LaneAttributes roleId="ProcessOwner"/>
+                        <ns5:LaneAttributes roleId="Initiator"/>
                         <ns5:FeatureSet/>
                     </ns5:OracleExtensions>
                 </extensionElements>
@@ -49,7 +49,7 @@
                 <extensionElements>
                     <ns5:OracleExtensions>
                         <ns5:GraphicsAttributes backgroundColor="-1761607681">
-                            <ns5:Position x="305" y="0"/>
+                            <ns5:Position x="200" y="0"/>
                             <ns5:Size width="200" height="0"/>
                         </ns5:GraphicsAttributes>
                         <ns5:LaneAttributes roleId="InitialReview"/>
@@ -62,7 +62,7 @@
             <extensionElements>
                 <ns5:OracleExtensions>
                     <ns5:GraphicsAttributes>
-                        <ns5:Position x="337" y="401"/>
+                        <ns5:Position x="343" y="293"/>
                     </ns5:GraphicsAttributes>
                     <ns5:FeatureSet>
                         <ns5:BooleanFeature value="false" name="isDraft"/>
@@ -75,6 +75,7 @@
                         <ns5:StringFeature value="USE_PROCESS_PERMISSION" name="sealType"/>
                         <ns5:StringFeature value="REUSE_PAYLOAD" name="reinitiatorPolicy"/>
                         <ns5:StringFeature value="SIMPLE" name="humanTaskType"/>
+                        <ns5:StringFeature value="" name="reinitiateSource"/>
                         <ns5:AttributeExpression attributeName="subjectExpressionFeature" language="http://www.w3.org/1999/XPath">'UserTask'
                             <extensionElements>
                                 <ns5:OracleExtensions>
@@ -202,7 +203,7 @@
             <extensionElements>
                 <ns5:OracleExtensions>
                     <ns5:GraphicsAttributes>
-                        <ns5:Position x="510" y="399"/>
+                        <ns5:Position x="510" y="294"/>
                     </ns5:GraphicsAttributes>
                     <ns5:FeatureSet>
                         <ns5:BooleanFeature value="false" name="isDraft"/>
@@ -293,7 +294,7 @@
             <extensionElements>
                 <ns5:OracleExtensions>
                     <ns5:GraphicsAttributes>
-                        <ns5:Position x="671" y="401"/>
+                        <ns5:Position x="671" y="296"/>
                     </ns5:GraphicsAttributes>
                     <ns5:FeatureSet>
                         <ns5:BooleanFeature value="false" name="isDraft"/>
@@ -427,7 +428,7 @@
             <extensionElements>
                 <ns5:OracleExtensions>
                     <ns5:GraphicsAttributes>
-                        <ns5:Position x="343" y="140"/>
+                        <ns5:Position x="332" y="89"/>
                     </ns5:GraphicsAttributes>
                     <ns5:FeatureSet>
                         <ns5:BooleanFeature value="false" name="isDraft"/>
@@ -527,13 +528,13 @@
                     </to>
                 </assignment>
             </dataOutputAssociation>
-            <resourceRole name="Process Owner" id="lane0"/>
+            <resourceRole name="Initiator" id="lane0"/>
         </userTask>
         <userTask isForCompensation="false" name="FYI" id="ACT958246778744">
             <extensionElements>
                 <ns5:OracleExtensions>
                     <ns5:GraphicsAttributes>
-                        <ns5:Position x="846" y="401"/>
+                        <ns5:Position x="846" y="296"/>
                     </ns5:GraphicsAttributes>
                     <ns5:FeatureSet>
                         <ns5:BooleanFeature value="false" name="isDraft"/>
@@ -667,7 +668,7 @@
             <extensionElements>
                 <ns5:OracleExtensions>
                     <ns5:GraphicsAttributes>
-                        <ns5:Position x="989" y="400"/>
+                        <ns5:Position x="989" y="295"/>
                     </ns5:GraphicsAttributes>
                     <ns5:FeatureSet>
                         <ns5:BooleanFeature value="false" name="isDraft"/>
@@ -801,7 +802,7 @@
             <extensionElements>
                 <ns5:OracleExtensions>
                     <ns5:GraphicsAttributes>
-                        <ns5:Position x="119" y="399"/>
+                        <ns5:Position x="119" y="294"/>
                     </ns5:GraphicsAttributes>
                     <ns5:FeatureSet>
                         <ns5:BooleanFeature value="false" name="catchAllErrors"/>
@@ -834,7 +835,7 @@
             <extensionElements>
                 <ns5:OracleExtensions>
                     <ns5:GraphicsAttributes>
-                        <ns5:Position x="1125" y="399"/>
+                        <ns5:Position x="1125" y="294"/>
                     </ns5:GraphicsAttributes>
                     <ns5:FeatureSet>
                         <ns5:BooleanFeature value="false" name="catchAllErrors"/>
@@ -867,7 +868,7 @@
             <extensionElements>
                 <ns5:OracleExtensions>
                     <ns5:GraphicsAttributes>
-                        <ns5:Position x="128" y="136"/>
+                        <ns5:Position x="141" y="85"/>
                     </ns5:GraphicsAttributes>
                     <ns5:FeatureSet>
                         <ns5:BooleanFeature value="false" name="isDraft"/>
