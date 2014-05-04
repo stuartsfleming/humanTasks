@@ -62,7 +62,7 @@
             <extensionElements>
                 <ns5:OracleExtensions>
                     <ns5:GraphicsAttributes>
-                        <ns5:Position x="338" y="394"/>
+                        <ns5:Position x="337" y="401"/>
                     </ns5:GraphicsAttributes>
                     <ns5:FeatureSet>
                         <ns5:BooleanFeature value="false" name="isDraft"/>
@@ -79,6 +79,13 @@
                             <extensionElements>
                                 <ns5:OracleExtensions>
                                     <ns5:Expression mode="text"/>
+                                </ns5:OracleExtensions>
+                            </extensionElements>
+                        </ns5:AttributeExpression>
+                        <ns5:AttributeExpression attributeName="priorityExpressionFeature" language="http://www.w3.org/1999/XPath">1
+                            <extensionElements>
+                                <ns5:OracleExtensions>
+                                    <ns5:Expression mode="number"/>
                                 </ns5:OracleExtensions>
                             </extensionElements>
                         </ns5:AttributeExpression>
@@ -794,7 +801,7 @@
             <extensionElements>
                 <ns5:OracleExtensions>
                     <ns5:GraphicsAttributes>
-                        <ns5:Position x="117" y="390"/>
+                        <ns5:Position x="119" y="399"/>
                     </ns5:GraphicsAttributes>
                     <ns5:FeatureSet>
                         <ns5:BooleanFeature value="false" name="catchAllErrors"/>
