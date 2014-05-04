@@ -1,5 +1,6 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
 <jws:workspace xmlns:jws="http://xmlns.oracle.com/ide/project">
+   <url n="application-source-directory" path="src/"/>
    <hash n="component-versions">
       <value n="oracle.adf.share.dt.migration.jps.JaznCredStoreMigratorHelper" v="11.1.1.1.0"/>
       <value n="oracle.adfdt.controller.adfc.source.migration.SavePointDataSourceForWLSMigrator" v="11.1.1.1.0"/>
@@ -31,8 +32,8 @@
                   </hash>
                </list>
             </hash>
-            <url n="earURL" path="deploy/Project_userTask.ear"/>
-            <value n="enterpriseAppName" v="Project_userTask"/>
+            <url n="earURL" path="deploy/humanTask_user.ear"/>
+            <value n="enterpriseAppName" v="humanTask_user"/>
             <hash n="fileGroups">
                <list n="groups">
                   <hash>
@@ -72,6 +73,11 @@
       </hash>
       <list n="profileList">
          <string v="Project_userTask"/>
+      </list>
+   </hash>
+   <hash n="oracle.mds.internal.dt.ide.CustOptions">
+      <list n="customizationLibraries">
+         <hash/>
       </list>
    </hash>
 </jws:workspace>
