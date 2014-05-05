@@ -707,7 +707,7 @@
             </dataOutputAssociation>
             <resourceRole name="Review" id="lane1"/>
         </userTask>
-        <userTask isForCompensation="false" name="UserTask1" id="ACT9763655648821">
+        <userTask isForCompensation="false" name="managment" id="ACT9763655648821">
             <extensionElements>
                 <ns5:OracleExtensions>
                     <ns5:GraphicsAttributes>
@@ -724,6 +724,13 @@
                         <ns5:StringFeature value="USE_PROCESS_PERMISSION" name="sealType"/>
                         <ns5:StringFeature value="REUSE_PAYLOAD" name="reinitiatorPolicy"/>
                         <ns5:StringFeature value="MANAGEMENT" name="humanTaskType"/>
+                        <ns5:AttributeExpression attributeName="subjectExpressionFeature" language="http://www.w3.org/1999/XPath">'managment'
+                            <extensionElements>
+                                <ns5:OracleExtensions>
+                                    <ns5:Expression mode="text"/>
+                                </ns5:OracleExtensions>
+                            </extensionElements>
+                        </ns5:AttributeExpression>
                     </ns5:FeatureSet>
                     <ns5:HumanTask humanTaskReference="HumanTasks.Managment"/>
                     <ns5:LogHandlers/>

@@ -10,6 +10,7 @@
         <sequence>
             <element name="Val1" type="string"/>
             <element name="Val2" type="string"/>
+            <element name="Val3" type="string"/>
         </sequence>
     </complexType>
 </schema>

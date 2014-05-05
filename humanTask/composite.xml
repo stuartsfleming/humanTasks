@@ -93,11 +93,11 @@
     <target.uri>Initiator/TaskService</target.uri>
   </wire>
   <wire>
-    <source.uri>Process.service</source.uri>
-    <target.uri>Process/Process.service</target.uri>
-  </wire>
-  <wire>
     <source.uri>Process/HumanTasks.Managment.reference</source.uri>
     <target.uri>managment/TaskService</target.uri>
+  </wire>
+  <wire>
+    <source.uri>Process.service</source.uri>
+    <target.uri>Process/Process.service</target.uri>
   </wire>
 </composite>
