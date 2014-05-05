@@ -5,16 +5,6 @@
       <loc/>
       <line/>
       <col/>
-      <file>ManagementTask.task</file>
-      <name>ManagementTask.task</name>
-      <fix/>
-      <msg>Error assignee not specified</msg>
-   </Fault>
-   <Fault>
-      <severity>warning</severity>
-      <loc/>
-      <line/>
-      <col/>
       <file>UserTask.task</file>
       <name>UserTask.task</name>
       <fix/>
@@ -27,6 +17,26 @@
       <col/>
       <file>GroupVoteTask.task</file>
       <name>GroupVoteTask.task</name>
+      <fix/>
+      <msg>Error assignee not specified</msg>
+   </Fault>
+   <Fault>
+      <severity>warning</severity>
+      <loc/>
+      <line/>
+      <col/>
+      <file>managment.task</file>
+      <name>managment.task</name>
+      <fix/>
+      <msg>Task title not specified</msg>
+   </Fault>
+   <Fault>
+      <severity>warning</severity>
+      <loc/>
+      <line/>
+      <col/>
+      <file>managment.task</file>
+      <name>managment.task</name>
       <fix/>
       <msg>Error assignee not specified</msg>
    </Fault>

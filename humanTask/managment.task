@@ -46,6 +46,7 @@
       <allowInitiatorEditParticipants>false</allowInitiatorEditParticipants>
       <allowParticipantsEditParticipants>false</allowParticipantsEditParticipants>
       <globalCreationTask>false</globalCreationTask>
+      <taskFlowFileLocation>file:/C:/JDeveloper/mywork/humanTasks/ui_humanTask_management/public_html/WEB-INF/managment_TaskFlow.xml</taskFlowFileLocation>
       <enableAutoClaim>true</enableAutoClaim>
       <workflowConditions/>
       <taskSequenceTypes>FUTURE</taskSequenceTypes>

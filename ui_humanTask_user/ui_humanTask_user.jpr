@@ -163,8 +163,8 @@
       </list>
    </hash>
    <hash n="oracle.jdeveloper.model.J2eeSettings">
-      <value n="j2eeWebAppName" v="humanTasks-ui_humanTask_user-webapp"/>
-      <value n="j2eeWebContextRoot" v="humanTasks-ui_humanTask_user-context-root"/>
+      <value n="j2eeWebAppName" v="ui_humanTask_user"/>
+      <value n="j2eeWebContextRoot" v="ui_humanTask_user"/>
    </hash>
    <hash n="oracle.jdeveloper.runner.RunConfigurations">
       <hash n="runConfigurationDefinitions">
