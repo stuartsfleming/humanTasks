@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Application xmlns="http://xmlns.oracle.com/adfm/application" version="11.1.1.64.93" id="DataBindings" SeparateXMLFiles="false" Package="ui_humantask_user" ClientType="Generic">
+  <pageMap>
+    <page path="/UserTask_Form.jspx" usageId="ui_humantask_user_UserTask_FormPageDef"/>
+  </pageMap>
+  <pageDefinitionUsages>
+    <page id="ui_humantask_user_UserTask_FormPageDef" path="ui_humantask_user.pageDefs.UserTask_FormPageDef"/>
+  </pageDefinitionUsages>
+  <dataControlUsages>
+    <dc id="ui_humanTask_user_UserTask" path="ui_humantask_user.ui_humanTask_user_UserTask"/>
+  </dataControlUsages>
+</Application>
