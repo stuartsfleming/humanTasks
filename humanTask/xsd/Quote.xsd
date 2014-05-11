@@ -8,9 +8,10 @@
     <element name="QuoteRequest" type="qt:QuoteRequestType"/>
     <complexType name="QuoteRequestType">
         <sequence>
-            <element name="Val1" type="string"/>
-            <element name="Val2" type="string"/>
-            <element name="Val3" type="string"/>
+            <element name="user" type="string"/>
+            <element name="userManager" type="string"/>
+            <element name="ManagerManager" type="string"/>
+            <element name="getLastPerformer" type="string"/>
         </sequence>
     </complexType>
 </schema>

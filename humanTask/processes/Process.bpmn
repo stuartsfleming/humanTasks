@@ -75,7 +75,6 @@
                         <ns5:StringFeature value="USE_PROCESS_PERMISSION" name="sealType"/>
                         <ns5:StringFeature value="REUSE_PAYLOAD" name="reinitiatorPolicy"/>
                         <ns5:StringFeature value="SIMPLE" name="humanTaskType"/>
-                        <ns5:StringFeature value="" name="reinitiateSource"/>
                         <ns5:AttributeExpression attributeName="subjectExpressionFeature" language="http://www.w3.org/1999/XPath">'UserTask'
                             <extensionElements>
                                 <ns5:OracleExtensions>
@@ -350,7 +349,6 @@
                         <ns5:StringFeature value="USE_PROCESS_PERMISSION" name="sealType"/>
                         <ns5:StringFeature value="REUSE_PAYLOAD" name="reinitiatorPolicy"/>
                         <ns5:StringFeature value="INITIATOR" name="humanTaskType"/>
-                        <ns5:StringFeature value="" name="reinitiateSource"/>
                         <ns5:AttributeExpression attributeName="subjectExpressionFeature" language="http://www.w3.org/1999/XPath">'Initiator'
                             <extensionElements>
                                 <ns5:OracleExtensions>
@@ -861,9 +859,7 @@
             <ioSpecification/>
             <dataOutputAssociation>
                 <extensionElements>
-                    <ns5:OracleExtensions>
-                        <ns5:OtherRef>QuoteRequestDataObject</ns5:OtherRef>
-                    </ns5:OracleExtensions>
+                    <ns5:OracleExtensions/>
                 </extensionElements>
                 <targetRef>QuoteRequestDataObject</targetRef>
                 <assignment>
@@ -879,31 +875,10 @@
                             </ns5:OracleExtensions>
                         </extensionElements>
                     </from>
-                    <to xsi:type="tFormalExpression" language="http://www.w3.org/1999/XPath" ns7:ns="http://www.mycompany.com/ns/salesquote" ns7:bpmn="http://www.omg.org/bpmn20" xmlns:ns7="http://xmlns.oracle.com/bpm/XPathNamespace">bpmn:getDataObject('QuoteRequestDataObject')/ns:Val1
+                    <to xsi:type="tFormalExpression" language="http://www.w3.org/1999/XPath" ns7:ns="http://www.mycompany.com/ns/salesquote" ns7:bpmn="http://www.omg.org/bpmn20" xmlns:ns7="http://xmlns.oracle.com/bpm/XPathNamespace">bpmn:getDataObject('QuoteRequestDataObject')/ns:user
                         <extensionElements>
                             <ns5:OracleExtensions>
-                                <ns5:Expression mode="simple"/>
-                            </ns5:OracleExtensions>
-                        </extensionElements>
-                    </to>
-                </assignment>
-                <assignment>
-                    <extensionElements>
-                        <ns5:OracleExtensions>
-                            <ns5:DataAssignment operation="copy"/>
-                        </ns5:OracleExtensions>
-                    </extensionElements>
-                    <from xsi:type="tFormalExpression" language="http://www.w3.org/1999/XPath" ns7:ns="http://www.mycompany.com/ns/salesquote" ns7:bpmn="http://www.omg.org/bpmn20" xmlns:ns7="http://xmlns.oracle.com/bpm/XPathNamespace">bpmn:getDataObject('QuoteRequestDataObject')/ns:Val3
-                        <extensionElements>
-                            <ns5:OracleExtensions>
-                                <ns5:Expression mode="simple"/>
-                            </ns5:OracleExtensions>
-                        </extensionElements>
-                    </from>
-                    <to xsi:type="tFormalExpression" language="http://www.w3.org/1999/XPath" ns7:ns="http://www.mycompany.com/ns/salesquote" ns7:bpmn="http://www.omg.org/bpmn20" xmlns:ns7="http://xmlns.oracle.com/bpm/XPathNamespace">bpmn:getDataObject('QuoteRequestDataObject')/ns:Val3
-                        <extensionElements>
-                            <ns5:OracleExtensions>
-                                <ns5:Expression mode="simple"/>
+                                <ns5:Expression mode="xpath"/>
                             </ns5:OracleExtensions>
                         </extensionElements>
                     </to>
@@ -921,10 +896,10 @@
                             </ns5:OracleExtensions>
                         </extensionElements>
                     </from>
-                    <to xsi:type="tFormalExpression" language="http://www.w3.org/1999/XPath" ns7:ns="http://www.mycompany.com/ns/salesquote" ns7:bpmn="http://www.omg.org/bpmn20" xmlns:ns7="http://xmlns.oracle.com/bpm/XPathNamespace">bpmn:getDataObject('QuoteRequestDataObject')/ns:Val2
+                    <to xsi:type="tFormalExpression" language="http://www.w3.org/1999/XPath" ns7:ns="http://www.mycompany.com/ns/salesquote" ns7:bpmn="http://www.omg.org/bpmn20" xmlns:ns7="http://xmlns.oracle.com/bpm/XPathNamespace">bpmn:getDataObject('QuoteRequestDataObject')/ns:getLastPerformer
                         <extensionElements>
                             <ns5:OracleExtensions>
-                                <ns5:Expression mode="simple"/>
+                                <ns5:Expression mode="xpath"/>
                             </ns5:OracleExtensions>
                         </extensionElements>
                     </to>
@@ -1123,5 +1098,24 @@
                 </ns5:OracleExtensions>
             </extensionElements>
         </sequenceFlow>
+        <artifact xsi:type="tTextAnnotation" id="textAnnotation">
+            <extensionElements>
+                <ns5:OracleExtensions>
+                    <ns5:GraphicsAttributes>
+                        <ns5:Position x="727" y="123"/>
+                        <ns5:Size width="248" height="157"/>
+                    </ns5:GraphicsAttributes>
+                    <ns5:FeatureSet>
+                        <ns5:StringFeature value="" name="associatedNode"/>
+                    </ns5:FeatureSet>
+                    <ns5:Localization>
+                        <ns5:Label>
+                            <ns5:LocalizedContent language="en">I stopped after changing the quote xsd names of the variables -- after that, I need to change the ui interfaces to this new value HOW?</ns5:LocalizedContent>
+                        </ns5:Label>
+                    </ns5:Localization>
+                </ns5:OracleExtensions>
+            </extensionElements>
+            <text>I stopped after changing the quote xsd names of the variables -- after that, I need to change the ui interfaces to this new value HOW?</text>
+        </artifact>
     </process>
 </definitions>
