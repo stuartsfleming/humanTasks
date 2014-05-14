@@ -20,12 +20,12 @@
    <list n="listOfChildren">
       <hash><url n="URL" path="git/git.jpr"/></hash>
       <hash><url n="URL" path="humanTask/humanTask.jpr"/></hash>
-      <hash><url n="URL" path="ui_humanTask_management/ui_humanTask_management.jpr"/></hash>
-      <hash><url n="URL" path="ui_humanTask_user/ui_humanTask_user.jpr"/></hash>
+      <hash><url n="URL" path="ui_initiator/ui_initiator.jpr"/></hash>
+      <hash><url n="URL" path="ui_management/ui_management.jpr"/></hash>
    </list>
    <hash n="oracle.jdeveloper.deploy.dt.DeploymentProfiles">
       <hash n="profileDefinitions">
-         <hash n="ui_humanTask_management">
+         <hash n="ui_initiator">
             <hash n="archiveOptions">
                <value n="hasManifest" v="false"/>
             </hash>
@@ -33,14 +33,13 @@
                <list n="dependencyList">
                   <hash>
                      <value n="adapterClass" v="oracle.jdevimpl.deploy.common.DefaultProfileDependable"/>
-                     <url n="ownerURL" path="ui_humanTask_management/ui_humanTask_management.jpr"/>
-                     <value n="pathInEar" v=""/>
-                     <value n="profileName" v="ui_humanTask_management"/>
+                     <url n="ownerURL" path="ui_initiator/ui_initiator.jpr"/>
+                     <value n="profileName" v="ui_initiator"/>
                   </hash>
                </list>
             </hash>
-            <url n="earURL" path="deploy/ui_humanTask_management.ear"/>
-            <value n="enterpriseAppName" v="ui_humanTask_management"/>
+            <url n="earURL" path="deploy/ui_initiator.ear"/>
+            <value n="enterpriseAppName" v="ui_initiator"/>
             <hash n="fileGroups">
                <list n="groups">
                   <hash>
@@ -75,9 +74,9 @@
                <value n="IncludeLibrariesFromOtherContainers" v="true"/>
             </hash>
             <value n="profileClass" v="oracle.jdeveloper.deploy.ear.EarProfile"/>
-            <value n="profileName" v="ui_humanTask_management"/>
+            <value n="profileName" v="ui_initiator"/>
          </hash>
-         <hash n="ui_humanTask_user">
+         <hash n="ui_management">
             <hash n="archiveOptions">
                <value n="hasManifest" v="false"/>
             </hash>
@@ -85,14 +84,13 @@
                <list n="dependencyList">
                   <hash>
                      <value n="adapterClass" v="oracle.jdevimpl.deploy.common.DefaultProfileDependable"/>
-                     <url n="ownerURL" path="ui_humanTask_user/ui_humanTask_user.jpr"/>
-                     <value n="pathInEar" v=""/>
-                     <value n="profileName" v="ui_humanTask_user"/>
+                     <url n="ownerURL" path="ui_management/ui_management.jpr"/>
+                     <value n="profileName" v="ui_management"/>
                   </hash>
                </list>
             </hash>
-            <url n="earURL" path="deploy/ui_humanTask_user.ear"/>
-            <value n="enterpriseAppName" v="ui_humanTask_user"/>
+            <url n="earURL" path="deploy/ui_management.ear"/>
+            <value n="enterpriseAppName" v="ui_management"/>
             <hash n="fileGroups">
                <list n="groups">
                   <hash>
@@ -127,12 +125,12 @@
                <value n="IncludeLibrariesFromOtherContainers" v="true"/>
             </hash>
             <value n="profileClass" v="oracle.jdeveloper.deploy.ear.EarProfile"/>
-            <value n="profileName" v="ui_humanTask_user"/>
+            <value n="profileName" v="ui_management"/>
          </hash>
       </hash>
       <list n="profileList">
-         <string v="ui_humanTask_management"/>
-         <string v="ui_humanTask_user"/>
+         <string v="ui_initiator"/>
+         <string v="ui_management"/>
       </list>
    </hash>
    <hash n="oracle.mds.internal.dt.ide.CustOptions">

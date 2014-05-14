@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<JavaBean xmlns="http://xmlns.oracle.com/adfm/beanmodel" version="11.1.1.64.93" id="InitiatorPayloadType" Package="ui_initiator_Initiator"
+          BeanClass="ui_initiator_Initiator.InitiatorPayloadType" isJavaBased="false">
+  <AccessorAttribute id="QuoteRequest" IsCollection="true" BeanClass="ui_initiator_Initiator.QuoteRequestType"
+                     CollectionBeanClass="ui_initiator_Initiator.QuoteRequestType_QuoteRequest_Operations">
+    <Properties>
+      <Property Name="minOccurs" Value="1"/>
+      <Property Name="maxOccurs" Value="1"/>
+      <Property Name="LABEL" Value="Quote Request"/>
+      <Property Name="nillable" Value="false"/>
+      <Property Name="originalName" Value="QuoteRequest"/>
+      <Property Name="targetNamespace" Value="http://www.mycompany.com/ns/salesquote"/>
+    </Properties>
+  </AccessorAttribute>
+</JavaBean>

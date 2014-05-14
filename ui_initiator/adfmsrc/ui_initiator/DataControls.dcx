@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<DataControlConfigs xmlns="http://xmlns.oracle.com/adfm/configuration" version="11.1.1.64.93" id="DataControls" Package="ui_initiator">
+  <AdapterDataControl id="ui_initiator_Initiator" FactoryClass="oracle.adf.model.adapter.DataControlFactoryImpl" ImplDef="oracle.bpel.services.datacontrol.XSDDataControlDefinition"
+                      SupportsTransactions="true" SupportsSortCollection="false" SupportsResetState="false" SupportsRangesize="false" SupportsFindMode="false"
+                      SupportsUpdates="false" Definition="ui_initiator_Initiator" BeanClass="ui_initiator_Initiator" xmlns="http://xmlns.oracle.com/adfm/datacontrol">
+    <Source>
+      <XSDDataControl xmlns="http://xmlns.oracle.com/bpel/workflow/task" SchemaLocation="file:/C:/JDeveloper/mywork/humanTasks/humanTask/xsd/InitiatorWorkflowTask.xsd"
+                      RootElement="task" rootelementnamespace="http://xmlns.oracle.com/bpel/workflow/task" taskLoc="../humanTask/Initiator.task" InitiationTask="true"
+                      DocumentStoreConfiguration="false"/>
+    </Source>
+  </AdapterDataControl>
+</DataControlConfigs>

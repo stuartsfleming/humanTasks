@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Application xmlns="http://xmlns.oracle.com/adfm/application" version="11.1.1.64.93" id="DataBindings" SeparateXMLFiles="false" Package="ui_initiator" ClientType="Generic">
+  <pageMap>
+    <page path="/Initiator_Form.jspx" usageId="ui_initiator_Initiator_FormPageDef"/>
+  </pageMap>
+  <pageDefinitionUsages>
+    <page id="ui_initiator_Initiator_FormPageDef" path="ui_initiator.pageDefs.Initiator_FormPageDef"/>
+  </pageDefinitionUsages>
+  <dataControlUsages>
+    <dc id="ui_initiator_Initiator" path="ui_initiator.ui_initiator_Initiator"/>
+  </dataControlUsages>
+</Application>

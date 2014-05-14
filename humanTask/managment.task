@@ -18,7 +18,7 @@
                <list>
                   <managementChain>
                      <resource type="XPATH" identityType="application_role">bpm:getPerformer()</resource>
-                     <levels type="STATIC">3</levels>
+                     <levels type="STATIC">2</levels>
                   </managementChain>
                </list>
             </sequentialParticipant>
@@ -47,7 +47,7 @@
       <allowInitiatorEditParticipants>false</allowInitiatorEditParticipants>
       <allowParticipantsEditParticipants>false</allowParticipantsEditParticipants>
       <globalCreationTask>false</globalCreationTask>
-      <taskFlowFileLocation>file:/C:/JDeveloper/mywork/humanTasks/ui_humanTask_management/public_html/WEB-INF/managment_TaskFlow.xml</taskFlowFileLocation>
+      <taskFlowFileLocation>file:/C:/JDeveloper/mywork/humanTasks/ui_management/public_html/WEB-INF/managment_TaskFlow.xml</taskFlowFileLocation>
       <enableAutoClaim>true</enableAutoClaim>
       <workflowConditions/>
       <taskSequenceTypes>FUTURE</taskSequenceTypes>
