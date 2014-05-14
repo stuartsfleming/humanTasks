@@ -35,8 +35,8 @@
       <loc/>
       <line/>
       <col/>
-      <file>Complex.task</file>
-      <name>Complex.task</name>
+      <file>FYI.task</file>
+      <name>FYI.task</name>
       <fix/>
       <msg>Error assignee not specified</msg>
    </Fault>
@@ -45,8 +45,8 @@
       <loc/>
       <line/>
       <col/>
-      <file>FYI.task</file>
-      <name>FYI.task</name>
+      <file>Complex.task</file>
+      <name>Complex.task</name>
       <fix/>
       <msg>Error assignee not specified</msg>
    </Fault>
