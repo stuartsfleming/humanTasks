@@ -75,6 +75,7 @@
                         <ns5:StringFeature value="USE_PROCESS_PERMISSION" name="sealType"/>
                         <ns5:StringFeature value="REUSE_PAYLOAD" name="reinitiatorPolicy"/>
                         <ns5:StringFeature value="SIMPLE" name="humanTaskType"/>
+                        <ns5:StringFeature value="" name="reinitiateSource"/>
                         <ns5:AttributeExpression attributeName="subjectExpressionFeature" language="http://www.w3.org/1999/XPath">'UserTask'
                             <extensionElements>
                                 <ns5:OracleExtensions>
@@ -349,6 +350,7 @@
                         <ns5:StringFeature value="USE_PROCESS_PERMISSION" name="sealType"/>
                         <ns5:StringFeature value="REUSE_PAYLOAD" name="reinitiatorPolicy"/>
                         <ns5:StringFeature value="INITIATOR" name="humanTaskType"/>
+                        <ns5:StringFeature value="" name="reinitiateSource"/>
                         <ns5:AttributeExpression attributeName="subjectExpressionFeature" language="http://www.w3.org/1999/XPath">'Initiator'
                             <extensionElements>
                                 <ns5:OracleExtensions>
@@ -722,8 +724,7 @@
                         <ns5:StringFeature value="USE_PROCESS_PERMISSION" name="sealType"/>
                         <ns5:StringFeature value="REUSE_PAYLOAD" name="reinitiatorPolicy"/>
                         <ns5:StringFeature value="MANAGEMENT" name="humanTaskType"/>
-                        <ns5:StringFeature value="" name="reinitiateSource"/>
-                        <ns5:AttributeExpression attributeName="subjectExpressionFeature" language="http://www.w3.org/1999/XPath">'managment'
+                        <ns5:AttributeExpression attributeName="subjectExpressionFeature" language="http://www.w3.org/1999/XPath">'managment (from BPM Icon)'
                             <extensionElements>
                                 <ns5:OracleExtensions>
                                     <ns5:Expression mode="text"/>
@@ -904,6 +905,27 @@
                         </extensionElements>
                     </to>
                 </assignment>
+                <assignment>
+                    <extensionElements>
+                        <ns5:OracleExtensions>
+                            <ns5:DataAssignment operation="copy"/>
+                        </ns5:OracleExtensions>
+                    </extensionElements>
+                    <from xsi:type="tFormalExpression" language="http://www.w3.org/1999/XPath" ns7:ids="http://xmlns.oracle.com/bpel/services/IdentityService/xpath" ns7:bpm="http://xmlns.oracle.com/bpmn20/extensions" xmlns:ns7="http://xmlns.oracle.com/bpm/XPathNamespace">ids:getManager( bpm:getPerformer() )
+                        <extensionElements>
+                            <ns5:OracleExtensions>
+                                <ns5:Expression mode="xpath"/>
+                            </ns5:OracleExtensions>
+                        </extensionElements>
+                    </from>
+                    <to xsi:type="tFormalExpression" language="http://www.w3.org/1999/XPath" ns7:ns="http://www.mycompany.com/ns/salesquote" ns7:bpmn="http://www.omg.org/bpmn20" xmlns:ns7="http://xmlns.oracle.com/bpm/XPathNamespace">bpmn:getDataObject('QuoteRequestDataObject')/ns:userManager
+                        <extensionElements>
+                            <ns5:OracleExtensions>
+                                <ns5:Expression mode="simple"/>
+                            </ns5:OracleExtensions>
+                        </extensionElements>
+                    </to>
+                </assignment>
             </dataOutputAssociation>
             <script></script>
         </scriptTask>
@@ -1062,7 +1084,7 @@
                 </ns5:OracleExtensions>
             </extensionElements>
         </sequenceFlow>
-        <sequenceFlow sourceRef="ACT9582448090853" targetRef="ACT9582439716795" name="sf13" id="sf13">
+        <sequenceFlow sourceRef="ACT9582448090853" targetRef="ACT976572041420" name="sf13" id="sf13">
             <extensionElements>
                 <ns5:OracleExtensions>
                     <ns5:SequenceFlowAttributes/>

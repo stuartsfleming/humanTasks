@@ -2,6 +2,7 @@
 <taskDefinition targetNamespace="http://xmlns.oracle.com/humanTasks/humanTask/managment" xmlns:xp20="http://www.oracle.com/XSL/Transform/java/oracle.tip.pc.services.functions.Xpath20" xmlns:ora="http://schemas.oracle.com/xpath/extension" xmlns:oraext="http://www.oracle.com/XSL/Transform/java/oracle.tip.pc.services.functions.ExtFunc" xmlns:task="http://xmlns.oracle.com/bpel/workflow/task" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://xmlns.oracle.com/bpel/workflow/taskDefinition" xmlns:bpm="http://xmlns.oracle.com/bpmn20/extensions">
    <name>managment</name>
    <id>${domain_id}_${process_id}_${process_revision}_managment</id>
+   <title type="XPATH"><value>string('title (from .task file)')</value></title>
    <priority>3</priority>
    <process processId="" processVersion=""/>
    <routingSlip xmlns="http://xmlns.oracle.com/bpel/workflow/routingSlip">
@@ -17,7 +18,7 @@
                <list>
                   <managementChain>
                      <resource type="XPATH" identityType="application_role">bpm:getPerformer()</resource>
-                     <levels type="STATIC">1</levels>
+                     <levels type="STATIC">3</levels>
                   </managementChain>
                </list>
             </sequentialParticipant>
